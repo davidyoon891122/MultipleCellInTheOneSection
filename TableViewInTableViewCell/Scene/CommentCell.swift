@@ -8,8 +8,8 @@
 import UIKit
 import SnapKit
 
-final class MainTableViewCell: UITableViewCell {
-    static let identifier = "MainTableViewCell"
+final class CommentCell: UITableViewCell {
+    static let identifier = "CommentCell"
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -87,20 +87,15 @@ final class MainTableViewCell: UITableViewCell {
         return view
     }()
     
-    private lazy var innerTableView: UITableView = {
-        let tableView = UITableView()
-        
-        return tableView
-    }()
-    
     func setupCell(title: String, content: String) {
         titleLabel.text = title
         contentTextView.text = content
         setupViews()
+        selectionStyle = .none
     }
 }
 
-private extension MainTableViewCell {
+private extension CommentCell {
     func setupViews() {
         [
             containerView
