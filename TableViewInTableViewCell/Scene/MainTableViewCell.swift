@@ -23,7 +23,9 @@ final class MainTableViewCell: UITableViewCell {
         let textView = UITextView()
         textView.text = "ContentText"
         textView.textColor = .label
+        textView.font = .systemFont(ofSize: 16.0)
         
+        textView.backgroundColor = .clear
         textView.isScrollEnabled = false
         textView.isEditable = false
         
@@ -73,8 +75,8 @@ final class MainTableViewCell: UITableViewCell {
     }()
     
     func setupCell(title: String, content: String) {
-//        titleLabel.text = title
-//        contentTextView.text = content
+        titleLabel.text = title
+        contentTextView.text = content
         setupViews()
     }
 }
