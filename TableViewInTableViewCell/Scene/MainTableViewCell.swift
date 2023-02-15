@@ -40,12 +40,19 @@ final class MainTableViewCell: UITableViewCell {
         return imageView
     }()
     
+    private let separatorView = SeparatorView(
+        size: 1.0,
+        bgColor: .lightGray.withAlphaComponent(0.3),
+        direction: .horizontal
+    )
+    
     private lazy var containerView: UIView = {
         let view = UIView()
         [
             profileImageView,
             titleLabel,
-            contentTextView
+            contentTextView,
+            separatorView
         ]
             .forEach {
                 view.addSubview($0)
@@ -68,10 +75,22 @@ final class MainTableViewCell: UITableViewCell {
             $0.top.equalTo(titleLabel.snp.bottom).offset(offset)
             $0.leading.equalTo(titleLabel)
             $0.trailing.equalTo(titleLabel)
-            $0.bottom.equalToSuperview().offset(-offset)
+        }
+        
+        separatorView.snp.makeConstraints {
+            $0.top.equalTo(contentTextView.snp.bottom).offset(offset)
+            $0.leading.equalToSuperview()
+            $0.trailing.equalToSuperview()
+            $0.bottom.equalToSuperview()
         }
         
         return view
+    }()
+    
+    private lazy var innerTableView: UITableView = {
+        let tableView = UITableView()
+        
+        return tableView
     }()
     
     func setupCell(title: String, content: String) {

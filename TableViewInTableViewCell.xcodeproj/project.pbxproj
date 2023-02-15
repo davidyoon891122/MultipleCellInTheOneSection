@@ -15,6 +15,7 @@
 		499C2747299C49460053B3DF /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 499C2746299C49460053B3DF /* SnapKit-Dynamic */; };
 		499C2749299C49D10053B3DF /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C2748299C49D10053B3DF /* MainTableViewCell.swift */; };
 		499C274D299C573F0053B3DF /* QuotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C274C299C573F0053B3DF /* QuotesModel.swift */; };
+		499C274F299C6B980053B3DF /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C274E299C6B980053B3DF /* SeparatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		499C273F299C47DC0053B3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		499C2748299C49D10053B3DF /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		499C274C299C573F0053B3DF /* QuotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesModel.swift; sourceTree = "<group>"; };
+		499C274E299C6B980053B3DF /* SeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		499C274B299C55DB0053B3DF /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				499C274E299C6B980053B3DF /* SeparatorView.swift */,
 				499C2735299C47DB0053B3DF /* ViewController.swift */,
 				499C2748299C49D10053B3DF /* MainTableViewCell.swift */,
 			);
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499C274F299C6B980053B3DF /* SeparatorView.swift in Sources */,
 				499C2736299C47DB0053B3DF /* ViewController.swift in Sources */,
 				499C2732299C47DB0053B3DF /* AppDelegate.swift in Sources */,
 				499C274D299C573F0053B3DF /* QuotesModel.swift in Sources */,

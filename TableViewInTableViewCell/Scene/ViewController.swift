@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.separatorStyle = .none
         
         return tableView
     }()
